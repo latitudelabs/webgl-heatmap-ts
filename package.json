@@ -1,6 +1,6 @@
 {
 	"name": "@latitudelabs/webgl-heatmap-ts",
-	"version": "0.2.4",
+	"version": "0.2.5",
 	"description": "An optimization of @pyalot WebGL Heatmap project - https://github.com/pyalot/webgl-heatmap",
 	"author": "latitudelabs",
 	"license": "MIT",
