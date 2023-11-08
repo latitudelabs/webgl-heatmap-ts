@@ -1,0 +1,62 @@
+{
+	"name": "@latitudelabs/webgl-heatmap-plus",
+	"version": "0.2.4",
+	"description": "An optimization of @pyalot WebGL Heatmap project - https://github.com/pyalot/webgl-heatmap",
+	"author": "latitudelabs",
+	"license": "MIT",
+	"repository": "https://github.com/latitudelabs/webgl-heatmap-plus.git",
+	"main": "lib/index.js",
+	"type": "module",
+	"types": "lib/index.d.ts",
+	"sideEffects": false,
+	"scripts": {
+		"tsc": "tsc",
+		"build": "tsup",
+		"prepare": "husky install",
+		"test": "tsd && ava"
+	},
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"require": "./lib/index.cjs"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"lib"
+	],
+	"keywords": [
+		"webgl",
+		"heatmap",
+		"webgl-heatmap",
+		"shaders"
+	],
+	"devDependencies": {
+		"@playcanvas/canvas-mock": "^1.0.1",
+		"ava": "^5.3.1",
+		"browser-env": "^3.3.0",
+		"husky": "^8.0.3",
+		"nano-staged": "^0.8.0",
+		"prettier": "^3.0.3",
+		"tsd": "^0.29.0",
+		"tsup": "^7.2.0",
+		"typescript": "^4.5.4"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"tsd": {
+		"directory": "./tsd"
+	},
+	"ava": {
+		"require": [
+			"./test/_browser-env.cjs"
+		]
+	},
+	"nano-staged": {
+		"*.{cjs,mjs,js,ts,svelte,json,md,css,scss,html}": "prettier --write"
+	},
+	"publishConfig": {
+		"@latitudelabs:webgl-heatmap-plus:registry": "https://npm.pkg.github.com"
+	}
+}
