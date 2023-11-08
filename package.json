@@ -55,8 +55,5 @@
 	},
 	"nano-staged": {
 		"*.{cjs,mjs,js,ts,svelte,json,md,css,scss,html}": "prettier --write"
-	},
-	"publishConfig": {
-		"@latitudelabs:webgl-heatmap-ts:registry": "https://npm.pkg.github.com"
 	}
 }
