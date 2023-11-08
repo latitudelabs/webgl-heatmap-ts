@@ -67,6 +67,7 @@ jobs:
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          access: public
 
       - uses: softprops/action-gh-release@v1
         with:
