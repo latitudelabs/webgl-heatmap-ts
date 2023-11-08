@@ -65,13 +65,10 @@ jobs:
         if: matrix.node-version == 18
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      # - uses: JS-DevTools/npm-publish@v1
-      #   if: matrix.node-version == 18
-      #   with:
-      #     token: ${{ secrets.NPM_TOKEN }}
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
 
       - uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/') && matrix.node-version == 18
