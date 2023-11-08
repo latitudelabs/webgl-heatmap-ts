@@ -1,10 +1,10 @@
 {
-	"name": "@latitudelabs/webgl-heatmap-plus",
+	"name": "@latitudelabs/webgl-heatmap-ts",
 	"version": "0.2.4",
 	"description": "An optimization of @pyalot WebGL Heatmap project - https://github.com/pyalot/webgl-heatmap",
 	"author": "latitudelabs",
 	"license": "MIT",
-	"repository": "https://github.com/latitudelabs/webgl-heatmap-plus.git",
+	"repository": "https://github.com/latitudelabs/webgl-heatmap-ts.git",
 	"main": "lib/index.js",
 	"type": "module",
 	"types": "lib/index.d.ts",
@@ -57,6 +57,6 @@
 		"*.{cjs,mjs,js,ts,svelte,json,md,css,scss,html}": "prettier --write"
 	},
 	"publishConfig": {
-		"@latitudelabs:webgl-heatmap-plus:registry": "https://npm.pkg.github.com"
+		"@latitudelabs:webgl-heatmap-ts:registry": "https://npm.pkg.github.com"
 	}
 }

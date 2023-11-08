@@ -1,6 +1,6 @@
 # WebGL Heatmap Plus
 
-An optimization of [Florian Boesch's](https://github.com/pyalot) [WebGL Heatmap project](https://github.com/pyalot/webgl-heatmap) - written in Typescript, built into esm and commonjs and released on [npmjs](https://www.npmjs.com/package/webgl-heatmap-plus).
+An optimization of [Florian Boesch's](https://github.com/pyalot) [WebGL Heatmap project](https://github.com/pyalot/webgl-heatmap) - written in Typescript, built into esm and commonjs and released on [npmjs](https://www.npmjs.com/package/webgl-heatmap-ts).
 
 ## Motivation
 
@@ -13,13 +13,13 @@ An optimization of [Florian Boesch's](https://github.com/pyalot) [WebGL Heatmap 
 
 ```bash
 # yarn
-yarn add webgl-heatmap-plus
+yarn add webgl-heatmap-ts
 
 # pnpm
-pnpm install webgl-heatmap-plus
+pnpm install webgl-heatmap-ts
 
 # npm
-npm install --save webgl-heatmap-plus
+npm install --save webgl-heatmap-ts
 ```
 
 Continue [here](https://github.com/pyalot/webgl-heatmap) for API and usage guide.
