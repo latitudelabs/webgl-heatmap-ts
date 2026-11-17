@@ -11,7 +11,7 @@
 	"sideEffects": false,
 	"scripts": {
 		"tsc": "tsc",
-		"build": "tsup",
+		"build": "rm -rf lib && tsup",
 		"prepare": "husky install",
 		"test": "tsd && ava"
 	},
